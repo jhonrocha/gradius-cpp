@@ -14,7 +14,7 @@ Message::Message() {
   y = 0;
   size = 20;
   TTF_Init();
-  font = TTF_OpenFont("g7gradius1_1byte.TTF", size);
+  font = TTF_OpenFont("assets/gradius.ttf", size);
 }
 
 Message::~Message() {
@@ -68,7 +68,7 @@ void Message::setY(int y) { this->y = y; }
 void Message::setSize(int size) {
   TTF_CloseFont(font);
   this->size = size;
-  font = TTF_OpenFont("g7gradius1_1byte.TTF", this->size);
+  font = TTF_OpenFont("assets/gradius.ttf", this->size);
 }
 
 SDL_Surface *Message::getText() { return this->text; }
