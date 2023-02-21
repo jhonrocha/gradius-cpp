@@ -10,17 +10,17 @@
 
 #include "Entity.h"
 
-class GradiusShield: public Entity {
+class GradiusShield : public Entity {
 private:
-	int lastAnimTime;
-	void setImg();
-public:
-	GradiusShield();
-	GradiusShield(int, int);
-	virtual ~GradiusShield();
-	void move(int, int);
-	bool onAnimation(Timer);
+  int lastAnimTime;
+  void setImg();
 
+public:
+  GradiusShield();
+  GradiusShield(int, int);
+  virtual ~GradiusShield();
+  void move(int, int);
+  bool onAnimation(Timer);
 };
 
 #endif /* GRADIUSSHIELD_H_ */

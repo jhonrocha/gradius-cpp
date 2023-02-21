@@ -10,13 +10,13 @@
 
 #include "Enemy.h"
 
-class SimpleEnemy: public Enemy {
+class SimpleEnemy : public Enemy {
 public:
-	SimpleEnemy();
-	SimpleEnemy(int, int);
-	virtual ~SimpleEnemy();
-	void shoot();
-	void move(int, int);
+  SimpleEnemy();
+  SimpleEnemy(int, int);
+  virtual ~SimpleEnemy();
+  void shoot();
+  void move(int, int);
 };
 
 #endif /* SIMPLEENEMY_H_ */

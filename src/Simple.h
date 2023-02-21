@@ -10,11 +10,11 @@
 
 #include "Bullet.h"
 
-class Simple: public Bullet {
+class Simple : public Bullet {
 public:
-	Simple(int x, int y, bool ally);
-	Simple(string , int, int, bool);
-	virtual ~Simple();
+  Simple(int x, int y, bool ally);
+  Simple(string, int, int, bool);
+  virtual ~Simple();
 };
 
 #endif /* SIMPLE_H_ */

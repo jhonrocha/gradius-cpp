@@ -11,25 +11,22 @@
 #include "Entity.h"
 using namespace std;
 
+class Enemy : public Entity {
 
-class Enemy: public Entity {
-
-	public:
-	Enemy();
-	Enemy(string,int, int);
-	bool onAnimation(Timer);
-	int static instanceCount;
-	void Save(ofstream& savefile);
-	void Load(ifstream& savefile);
-	virtual ~Enemy();
+public:
+  Enemy();
+  Enemy(string, int, int);
+  bool onAnimation(Timer);
+  int static instanceCount;
+  void Save(ofstream &savefile);
+  void Load(ifstream &savefile);
+  virtual ~Enemy();
 
 private:
-
-	bool isDead;
-	int lastAnimTime;
-	void setImg();
-	void instancesCount();
-
+  bool isDead;
+  int lastAnimTime;
+  void setImg();
+  void instancesCount();
 };
 
 #endif /* ENEMY_H_ */

@@ -8,17 +8,17 @@
 #ifndef TITLE_H_
 #define TITLE_H_
 
-#include "Screen.h"
 #include "Button.h"
+#include "Screen.h"
 
-class Title: public Screen {
+class Title : public Screen {
 public:
-	Event event;
-	Button NewGame, Load, Quit;
-	Title();
-	int TitleLoop();
-	void HandleOptions();
-	virtual ~Title();
+  Event event;
+  Button NewGame, Load, Quit;
+  Title();
+  int TitleLoop();
+  void HandleOptions();
+  virtual ~Title();
 };
 
 #endif /* TITLE_H_ */

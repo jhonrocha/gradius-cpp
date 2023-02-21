@@ -10,12 +10,12 @@
 
 #include "Screen.h"
 
-class Stage: public Screen {
+class Stage : public Screen {
 
 public:
-	Stage();
-	void options();
-	virtual ~Stage();
+  Stage();
+  void options();
+  virtual ~Stage();
 };
 
 #endif /* STAGE_H_ */

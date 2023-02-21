@@ -17,17 +17,13 @@ bool init() {
 }
 
 int main() {
-  // TODO Main
   Controler GameControl;
-
-  //	bool quit = false;
 
   if (!init()) {
     cout << "Unknown Problem!" << endl;
   }
 
   GameControl.GameLoop();
-  //	quit = GameControl.GameQuit();
 
   SDL_Quit();
 

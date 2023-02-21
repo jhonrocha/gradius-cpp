@@ -7,14 +7,12 @@
 
 #include "Stage.h"
 
-Stage::Stage(): Screen("assets/Stage1.gif") {
-	SDL_WM_SetCaption( "Gradius - Stage 1", NULL );
+Stage::Stage() : Screen("assets/Stage1.gif") {
+  SDL_WM_SetCaption("Gradius - Stage 1", NULL);
 }
 
 Stage::~Stage() {
-	// TODO
+  // TODO
 }
 
-void Stage::options(){
-
-}
+void Stage::options() {}

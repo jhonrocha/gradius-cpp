@@ -7,27 +7,23 @@
 
 #include "Background.h"
 
-Background::Background(string path, int xVel):Sprite(path) {
-	this->xVel = xVel;
+Background::Background(string path, int xVel) : Sprite(path) {
+  this->xVel = xVel;
 }
 
-void Background::move(SDL_Surface* screen){
-	//Scroll background
-	x -= xVel;
-	if( x <= -width ) {
-		x = 0;
-	}
-	show(x,y,screen);
-	show(x+width,y,screen);
+void Background::move(SDL_Surface *screen) {
+  // Scroll background
+  x -= xVel;
+  if (x <= -width) {
+    x = 0;
+  }
+  show(x, y, screen);
+  show(x + width, y, screen);
 }
 
-void Background::setXVel(int xVel){
-	this->xVel = xVel;
-}
-int Background::getXVel(){
-	return xVel;
-}
+void Background::setXVel(int xVel) { this->xVel = xVel; }
+int Background::getXVel() { return xVel; }
 
 Background::~Background() {
-	// TODO Auto-generated destructor stub
+  // TODO Auto-generated destructor stub
 }

@@ -10,11 +10,11 @@
 
 #include "Bullet.h"
 
-class Double: public Bullet {
+class Double : public Bullet {
 public:
-	Double(int x, int y, bool ally);
-	Double(string path, int, int, bool);
-	virtual ~Double();
+  Double(int x, int y, bool ally);
+  Double(string path, int, int, bool);
+  virtual ~Double();
 };
 
 #endif /* DOUBLE_H_ */

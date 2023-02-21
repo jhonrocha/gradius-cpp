@@ -13,25 +13,25 @@
 
 class Button {
 private:
-	bool click;
-	SDL_Rect buttonBox, mouseBox;
+  bool click;
+  SDL_Rect buttonBox, mouseBox;
 
 public:
-	Sprite buttonImg;
-	Button();
-	Button(int, int, int, int);
+  Sprite buttonImg;
+  Button();
+  Button(int, int, int, int);
 
-	virtual ~Button();
+  virtual ~Button();
 
-	void setX(int);
-	void setY(int);
-	void setPosition(int, int);
+  void setX(int);
+  void setY(int);
+  void setPosition(int, int);
 
-	bool handle_events(Event);
-	void setImg(string);
-	bool isClicked();
-	//Shows the button on the screen
-	//void show();
+  bool handle_events(Event);
+  void setImg(string);
+  bool isClicked();
+  // Shows the button on the screen
+  // void show();
 };
 
 #endif /* BUTTON_H_ */

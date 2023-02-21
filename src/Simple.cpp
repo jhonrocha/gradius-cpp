@@ -7,27 +7,27 @@
 
 #include "Simple.h"
 
-Simple::Simple(int x, int y, bool ally): Bullet("assets/tiro1.png", x, y, ally) {
-	if(ally == true)
-			xVel = 12;
-		else
-			xVel = -10;
-	Uint32 colorkey = SDL_MapRGB( sprite->format, 0, 0, 0);
-	SDL_SetColorKey( sprite, SDL_SRCCOLORKEY, colorkey );
-	sound.loadFile("assets/sounds/bullet1.wav");
+Simple::Simple(int x, int y, bool ally)
+    : Bullet("assets/tiro1.png", x, y, ally) {
+  if (ally == true)
+    xVel = 12;
+  else
+    xVel = -10;
+  Uint32 colorkey = SDL_MapRGB(sprite->format, 0, 0, 0);
+  SDL_SetColorKey(sprite, SDL_SRCCOLORKEY, colorkey);
+  sound.loadFile("assets/sounds/bullet1.wav");
 }
 
-Simple::Simple(string path, int x, int y, bool ally): Bullet(path, x, y, ally) {
-	// TODO Auto-generated constructor stub
-	if(ally == true)
-			xVel = 12;
-		else
-			xVel = -10;
-	Uint32 colorkey = SDL_MapRGB( sprite->format, 0, 0, 0);
-	SDL_SetColorKey( sprite, SDL_SRCCOLORKEY, colorkey );
-	sound.loadFile("assets/sounds/bullet1.wav");
+Simple::Simple(string path, int x, int y, bool ally)
+    : Bullet(path, x, y, ally) {
+  // TODO Auto-generated constructor stub
+  if (ally == true)
+    xVel = 12;
+  else
+    xVel = -10;
+  Uint32 colorkey = SDL_MapRGB(sprite->format, 0, 0, 0);
+  SDL_SetColorKey(sprite, SDL_SRCCOLORKEY, colorkey);
+  sound.loadFile("assets/sounds/bullet1.wav");
 }
 
-Simple::~Simple() {
-
-}
+Simple::~Simple() {}

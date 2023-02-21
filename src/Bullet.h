@@ -10,24 +10,24 @@
 
 #include "Entity.h"
 
-class Bullet: public Entity {
+class Bullet : public Entity {
 
 protected:
-	bool ally;
-	static int amount;
-public:
-	Bullet();
-	Bullet(string,int, int, bool);
-	virtual ~Bullet();
-	void setAlly(bool);
-	bool getAlly();
-	void instanceCount();
-	int getAmount();
-	void move(int, int);
-	virtual void Save(ofstream& savefile);
-	virtual void Load(ifstream& savefile);
-	void soundShoot();
+  bool ally;
+  static int amount;
 
+public:
+  Bullet();
+  Bullet(string, int, int, bool);
+  virtual ~Bullet();
+  void setAlly(bool);
+  bool getAlly();
+  void instanceCount();
+  int getAmount();
+  void move(int, int);
+  virtual void Save(ofstream &savefile);
+  virtual void Load(ifstream &savefile);
+  void soundShoot();
 };
 
 #endif /* BULLET_H_ */

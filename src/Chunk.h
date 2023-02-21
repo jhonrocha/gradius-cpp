@@ -10,14 +10,15 @@
 
 #include "SFX.h"
 
-class Chunk: public SFX {
+class Chunk : public SFX {
 private:
-	Mix_Chunk* chunk;
+  Mix_Chunk *chunk;
+
 public:
-	Chunk();
-	virtual ~Chunk();
-	void loadFile(string);
-	void playSound();
+  Chunk();
+  virtual ~Chunk();
+  void loadFile(string);
+  void playSound();
 };
 
 #endif /* CHUNK_H_ */

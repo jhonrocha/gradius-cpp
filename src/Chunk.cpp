@@ -8,19 +8,15 @@
 #include "Chunk.h"
 
 Chunk::Chunk() {
-	// TODO Auto-generated constructor stub
-	chunk = NULL;
+  // TODO Auto-generated constructor stub
+  chunk = NULL;
 }
 
 Chunk::~Chunk() {
-	// TODO Auto-generated destructor stub
-	Mix_FreeChunk(chunk);
+  // TODO Auto-generated destructor stub
+  Mix_FreeChunk(chunk);
 }
 
-void Chunk::loadFile(string path) {
-	chunk = Mix_LoadWAV(path.c_str());
-}
+void Chunk::loadFile(string path) { chunk = Mix_LoadWAV(path.c_str()); }
 
-void Chunk::playSound() {
-	Mix_PlayChannel(-1, chunk, 0);
-}
+void Chunk::playSound() { Mix_PlayChannel(-1, chunk, 0); }

@@ -10,15 +10,16 @@
 
 #include "Sprite.h"
 
-class Background: public Sprite {
+class Background : public Sprite {
 private:
-	int xVel;
+  int xVel;
+
 public:
-	Background(string,int);
-	void move(SDL_Surface*);
-	void setXVel(int);
-	int getXVel();
-	virtual ~Background();
+  Background(string, int);
+  void move(SDL_Surface *);
+  void setXVel(int);
+  int getXVel();
+  virtual ~Background();
 };
 
 #endif /* BACKGROUND_H_ */

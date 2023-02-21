@@ -8,13 +8,13 @@
 #ifndef GAMEOVER_H_
 #define GAMEOVER_H_
 
-#include "Screen.h"
 #include "Event.h"
+#include "Screen.h"
 
-class GameOver: public Screen {
+class GameOver : public Screen {
 public:
-	GameOver();
-	virtual ~GameOver();
+  GameOver();
+  virtual ~GameOver();
 };
 
 #endif /* GAMEOVER_H_ */

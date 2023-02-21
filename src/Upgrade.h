@@ -10,15 +10,15 @@
 
 #include "Entity.h"
 
-class Upgrade: public Entity {
+class Upgrade : public Entity {
 public:
-	Upgrade();
-	Upgrade(int, int);
-	void move(int, int);
-	void setXVel(int);
-	void setYVel(int);
-	bool isUpgrade();
-	virtual ~Upgrade();
+  Upgrade();
+  Upgrade(int, int);
+  void move(int, int);
+  void setXVel(int);
+  void setYVel(int);
+  bool isUpgrade();
+  virtual ~Upgrade();
 };
 
 #endif /* UPGRADE_H_ */

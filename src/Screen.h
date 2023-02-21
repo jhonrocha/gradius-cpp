@@ -14,19 +14,19 @@
 class Screen {
 
 public:
-	Background background;
-	int screenWidth, screenHeight;
-	bool windowed;
-	SDL_Surface* screen;
+  Background background;
+  int screenWidth, screenHeight;
+  bool windowed;
+  SDL_Surface *screen;
 
-	Screen(string backgorund_path);
-	void setScreenWidth(int);
-	void setScreenHeight(int);
-	int getScreenWidth();
-	int getScreenHeight();
-	void showScreen();
-	void fullscreen();
-	virtual ~Screen();
+  Screen(string backgorund_path);
+  void setScreenWidth(int);
+  void setScreenHeight(int);
+  int getScreenWidth();
+  int getScreenHeight();
+  void showScreen();
+  void fullscreen();
+  virtual ~Screen();
 };
 
 #endif /* SCREEN_H_ */

@@ -15,12 +15,13 @@ using namespace std;
 
 class SFX {
 private:
-	int type;
+  int type;
+
 public:
-	SFX();
-	virtual ~SFX();
-	virtual void loadFile(string);
-	virtual void playSound();
+  SFX();
+  virtual ~SFX();
+  virtual void loadFile(string);
+  virtual void playSound();
 };
 
 #endif /* SFX_H_ */

@@ -8,38 +8,28 @@
 #include "Music.h"
 
 Music::Music() {
-	// TODO Auto-generated constructor stub
-	music = NULL;
+  // TODO Auto-generated constructor stub
+  music = NULL;
 }
 
 Music::~Music() {
-	// TODO Auto-generated destructor stub
-	Mix_FreeMusic(music);
+  // TODO Auto-generated destructor stub
+  Mix_FreeMusic(music);
 }
 
-void Music::loadFile(string path) {
-	music = Mix_LoadMUS(path.c_str());
-}
+void Music::loadFile(string path) { music = Mix_LoadMUS(path.c_str()); }
 
-void Music::playSound() {
-	Mix_PlayMusic(music, -1);
-}
+void Music::playSound() { Mix_PlayMusic(music, -1); }
 
 void Music::pauseSound() {
-	if(isPaused())
-		Mix_ResumeMusic();
-	else
-		Mix_PauseMusic();
+  if (isPaused())
+    Mix_ResumeMusic();
+  else
+    Mix_PauseMusic();
 }
 
-void Music::stopSound() {
-	Mix_HaltMusic();
-}
+void Music::stopSound() { Mix_HaltMusic(); }
 
-int Music::isPlaying() {
-	return Mix_PlayingMusic();
-}
+int Music::isPlaying() { return Mix_PlayingMusic(); }
 
-int Music::isPaused() {
-	return Mix_PausedMusic();
-}
+int Music::isPaused() { return Mix_PausedMusic(); }

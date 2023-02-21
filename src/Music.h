@@ -10,18 +10,19 @@
 
 #include "SFX.h"
 
-class Music: public SFX {
+class Music : public SFX {
 private:
-	Mix_Music* music;
+  Mix_Music *music;
+
 public:
-	Music();
-	virtual ~Music();
-	void loadFile(string);
-	void playSound();
-	void pauseSound();
-	void stopSound();
-	int isPlaying();
-	int isPaused();
+  Music();
+  virtual ~Music();
+  void loadFile(string);
+  void playSound();
+  void pauseSound();
+  void stopSound();
+  int isPlaying();
+  int isPaused();
 };
 
 #endif /* MUSIC_H_ */

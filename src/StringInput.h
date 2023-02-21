@@ -8,17 +8,18 @@
 #ifndef STRINGINPUT_H_
 #define STRINGINPUT_H_
 
-#include "Message.h"
 #include "Event.h"
+#include "Message.h"
 
-class StringInput: public Message {
+class StringInput : public Message {
 private:
-	Event event;
-	string str;
+  Event event;
+  string str;
+
 public:
-	StringInput();
-	virtual ~StringInput();
-	void handleInput();
+  StringInput();
+  virtual ~StringInput();
+  void handleInput();
 };
 
 #endif /* STRINGINPUT_H_ */

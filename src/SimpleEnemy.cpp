@@ -7,40 +7,35 @@
 
 #include "SimpleEnemy.h"
 
-SimpleEnemy::SimpleEnemy(){
-	xVel = 3;
-	yVel = 6;
-	Uint32 colorkey = SDL_MapRGB( sprite->format, 255, 255 ,255);
-	SDL_SetColorKey( sprite, SDL_SRCCOLORKEY, colorkey );
+SimpleEnemy::SimpleEnemy() {
+  xVel = 3;
+  yVel = 6;
+  Uint32 colorkey = SDL_MapRGB(sprite->format, 255, 255, 255);
+  SDL_SetColorKey(sprite, SDL_SRCCOLORKEY, colorkey);
 }
 
-SimpleEnemy::SimpleEnemy(int x, int y):Enemy("assets/enemy1.png", x, y){
-	xVel = 3;
-	yVel = 6;
-	Uint32 colorkey = SDL_MapRGB( sprite->format, 255, 255, 255);
-	SDL_SetColorKey( sprite, SDL_SRCCOLORKEY, colorkey );
+SimpleEnemy::SimpleEnemy(int x, int y) : Enemy("assets/enemy1.png", x, y) {
+  xVel = 3;
+  yVel = 6;
+  Uint32 colorkey = SDL_MapRGB(sprite->format, 255, 255, 255);
+  SDL_SetColorKey(sprite, SDL_SRCCOLORKEY, colorkey);
 }
 
 SimpleEnemy::~SimpleEnemy() {
-	// TODO Auto-generated destructor stub
+  // TODO Auto-generated destructor stub
 }
 
-void SimpleEnemy::shoot(){
+void SimpleEnemy::shoot() {}
 
-}
+void SimpleEnemy::move(int screenWidth, int screenHeight) {
 
+  x -= xVel;
+  y += yVel;
 
-void SimpleEnemy::move(int screenWidth, int screenHeight){
-
-	x -= xVel;
-	y += yVel;
-
-	if ((y < 0) || ((y + height) > (screenHeight - 60)))
-	{
-		y -= yVel;
-		yVel = -yVel;
-	}
-	Box.x = x;
-	Box.y = y;
-
+  if ((y < 0) || ((y + height) > (screenHeight - 60))) {
+    y -= yVel;
+    yVel = -yVel;
+  }
+  Box.x = x;
+  Box.y = y;
 }

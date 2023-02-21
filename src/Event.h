@@ -12,16 +12,17 @@
 
 class Event {
 private:
-	SDL_Event event;
+  SDL_Event event;
+
 public:
-	Event();
-	virtual ~Event();
-	bool ThereIsEvent();
-	Uint8 EventType();
-	Uint8 EventButton();
-	SDL_Rect MousePosition();
-	SDLKey EventKey();
-	Uint16 EventKeyUnicode();
+  Event();
+  virtual ~Event();
+  bool ThereIsEvent();
+  Uint8 EventType();
+  Uint8 EventButton();
+  SDL_Rect MousePosition();
+  SDLKey EventKey();
+  Uint16 EventKeyUnicode();
 };
 
 #endif /* EVENT_H_ */

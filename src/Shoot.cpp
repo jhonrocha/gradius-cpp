@@ -8,11 +8,9 @@
 #include "Shoot.h"
 
 Shoot::Shoot() {
-	// TODO Auto-generated constructor stub
-
+  // TODO Auto-generated constructor stub
 }
 
 Shoot::~Shoot() {
-	// TODO Auto-generated destructor stub
+  // TODO Auto-generated destructor stub
 }
-

@@ -10,18 +10,19 @@
 
 #include "Enemy.h"
 #include "Shoot.h"
-#include"Simple.h"
+#include "Simple.h"
 
-class SquadEnemy: public Enemy, public Shoot {
+class SquadEnemy : public Enemy, public Shoot {
 private:
-	int lastFireTime;
-	Simple *tiro;
+  int lastFireTime;
+  Simple *tiro;
+
 public:
-	SquadEnemy();
-	SquadEnemy(int, int);
-	virtual ~SquadEnemy();
-	void shoot(Timer, list<Entity*>*);
-	void move(int, int);
+  SquadEnemy();
+  SquadEnemy(int, int);
+  virtual ~SquadEnemy();
+  void shoot(Timer, list<Entity *> *);
+  void move(int, int);
 };
 
 #endif /* SQUADENEMY_H_ */

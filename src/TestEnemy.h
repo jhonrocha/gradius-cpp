@@ -10,11 +10,11 @@
 
 #include "Enemy.h"
 
-class TestEnemy: public Enemy {
+class TestEnemy : public Enemy {
 public:
-	TestEnemy(int, int);
-	void move(int, int);
-	virtual ~TestEnemy();
+  TestEnemy(int, int);
+  void move(int, int);
+  virtual ~TestEnemy();
 };
 
 #endif /* TESTENEMY_H_ */
