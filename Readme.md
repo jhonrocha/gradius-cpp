@@ -1,6 +1,8 @@
 # Gradius C++
 This is a rebuild of a Gradius game, done for academic/study purposes.
 
+![gradius image](assets/title_screen.png)
+
 ## Prerequisites
 
 - gcc
