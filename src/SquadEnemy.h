@@ -13,11 +13,11 @@
 #include "Simple.h"
 
 class SquadEnemy : public Enemy, public Shoot {
-private:
+ private:
   int lastFireTime;
   Simple *tiro;
 
-public:
+ public:
   SquadEnemy();
   SquadEnemy(int, int);
   virtual ~SquadEnemy();

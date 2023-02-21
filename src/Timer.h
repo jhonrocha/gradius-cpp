@@ -9,7 +9,7 @@
 #define TIMER_H_
 
 class Timer {
-private:
+ private:
   // The clock time when the timer started
   int startTicks;
   // The ticks stored when the timer was paused
@@ -18,7 +18,7 @@ private:
   bool paused;
   bool started;
 
-public:
+ public:
   // Initializes variables
   Timer();
   // The various clock actions

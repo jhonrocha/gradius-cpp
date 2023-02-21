@@ -11,7 +11,7 @@
 #include "Enemy.h"
 
 class SimpleEnemy : public Enemy {
-public:
+ public:
   SimpleEnemy();
   SimpleEnemy(int, int);
   virtual ~SimpleEnemy();

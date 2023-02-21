@@ -11,11 +11,11 @@
 #include "Entity.h"
 
 class GradiusShield : public Entity {
-private:
+ private:
   int lastAnimTime;
   void setImg();
 
-public:
+ public:
   GradiusShield();
   GradiusShield(int, int);
   virtual ~GradiusShield();

@@ -11,10 +11,10 @@
 #include "Sprite.h"
 
 class Background : public Sprite {
-private:
+ private:
   int xVel;
 
-public:
+ public:
   Background(string, int);
   void move(SDL_Surface *);
   void setXVel(int);

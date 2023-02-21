@@ -8,17 +8,18 @@
 #ifndef MESSAGE_H_
 #define MESSAGE_H_
 
-#include "SDL/SDL_ttf.h"
 #include <iostream>
+
+#include "SDL/SDL_ttf.h"
 using namespace std;
 
 class Message {
-private:
+ private:
   SDL_Surface *text;
   int x, y, size;
   TTF_Font *font;
 
-public:
+ public:
   Message();
   virtual ~Message();
   void setText(string);

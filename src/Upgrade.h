@@ -11,7 +11,7 @@
 #include "Entity.h"
 
 class Upgrade : public Entity {
-public:
+ public:
   Upgrade();
   Upgrade(int, int);
   void move(int, int);

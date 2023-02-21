@@ -12,10 +12,10 @@
 #include "Screen.h"
 
 class WinScreen : public Screen {
-private:
+ private:
   string name_player;
 
-public:
+ public:
   WinScreen();
   string get_namePlayer();
   void set_namePlayer(string);

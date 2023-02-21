@@ -12,7 +12,7 @@
 #include "Screen.h"
 
 class GameOver : public Screen {
-public:
+ public:
   GameOver();
   virtual ~GameOver();
 };

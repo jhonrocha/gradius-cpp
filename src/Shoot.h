@@ -8,12 +8,13 @@
 #ifndef SHOOT_H_
 #define SHOOT_H_
 
-#include "Entity.h"
-#include "Timer.h"
 #include <list>
 
+#include "Entity.h"
+#include "Timer.h"
+
 class Shoot {
-public:
+ public:
   Shoot();
   virtual ~Shoot();
   virtual void shoot(Timer, list<Entity *> *) = 0;

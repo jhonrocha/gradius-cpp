@@ -12,7 +12,7 @@
 #include "Screen.h"
 
 class Title : public Screen {
-public:
+ public:
   Event event;
   Button NewGame, Load, Quit;
   Title();

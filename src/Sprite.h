@@ -8,21 +8,21 @@
 #ifndef SPRITE_H_
 #define SPRITE_H_
 
-#include "SDL/SDL.h"
 #include <iostream>
 #include <vector>
+
+#include "SDL/SDL.h"
 using namespace std;
 
 class Sprite {
-
-protected:
+ protected:
   SDL_Surface *sprite;
   vector<SDL_Surface *> animate;
   int x, y;
   int width, height;
   int pos;
 
-public:
+ public:
   Sprite();
   Sprite(string);
   Sprite(string, int, int);

@@ -6,12 +6,14 @@
  */
 
 #include "Timer.h"
-#include "SDL/SDL.h"
-#include "SDL/SDL_image.h"
-#include "SDL/SDL_ttf.h"
+
 #include <iostream>
 #include <sstream>
 #include <string>
+
+#include "SDL/SDL.h"
+#include "SDL/SDL_image.h"
+#include "SDL/SDL_ttf.h"
 
 Timer::Timer() {
   // Initialize the variables

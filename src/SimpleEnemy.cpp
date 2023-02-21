@@ -28,7 +28,6 @@ SimpleEnemy::~SimpleEnemy() {
 void SimpleEnemy::shoot() {}
 
 void SimpleEnemy::move(int screenWidth, int screenHeight) {
-
   x -= xVel;
   y += yVel;
 

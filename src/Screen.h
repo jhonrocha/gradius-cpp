@@ -12,8 +12,7 @@
 #include "Sprite.h"
 
 class Screen {
-
-public:
+ public:
   Background background;
   int screenWidth, screenHeight;
   bool windowed;

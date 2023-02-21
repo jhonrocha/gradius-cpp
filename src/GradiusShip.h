@@ -8,6 +8,9 @@
 #ifndef GRADIUSSHIP_H_
 #define GRADIUSSHIP_H_
 
+#include <iostream>
+#include <list>
+
 #include "Bullet.h"
 #include "Double.h"
 #include "Entity.h"
@@ -15,14 +18,11 @@
 #include "SDL/SDL.h"
 #include "Simple.h"
 #include "Timer.h"
-#include <iostream>
-#include <list>
 
 using namespace std;
 
 class GradiusShip : public Entity {
-
-private:
+ private:
   int powerup;
   int upgrade;
   bool observerShield;
@@ -39,7 +39,7 @@ private:
     POWERUP_BULLET,
   };
 
-public:
+ public:
   GradiusShip(int, int);
   virtual ~GradiusShip();
   int getLife();

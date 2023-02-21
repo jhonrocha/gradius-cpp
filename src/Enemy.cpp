@@ -65,8 +65,7 @@ bool Enemy::onAnimation(Timer globalTime) {
   if (lastAnimTime + 50 < globalTime.get_ticks()) {
     lastAnimTime = globalTime.get_ticks();
     pos++;
-    if (pos == 10)
-      return true;
+    if (pos == 10) return true;
   }
   return false;
 }

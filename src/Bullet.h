@@ -11,12 +11,11 @@
 #include "Entity.h"
 
 class Bullet : public Entity {
-
-protected:
+ protected:
   bool ally;
   static int amount;
 
-public:
+ public:
   Bullet();
   Bullet(string, int, int, bool);
   virtual ~Bullet();

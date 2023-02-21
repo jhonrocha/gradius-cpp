@@ -12,11 +12,11 @@
 #include "Message.h"
 
 class StringInput : public Message {
-private:
+ private:
   Event event;
   string str;
 
-public:
+ public:
   StringInput();
   virtual ~StringInput();
   void handleInput();

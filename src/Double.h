@@ -11,7 +11,7 @@
 #include "Bullet.h"
 
 class Double : public Bullet {
-public:
+ public:
   Double(int x, int y, bool ally);
   Double(string path, int, int, bool);
   virtual ~Double();

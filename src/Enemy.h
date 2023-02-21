@@ -12,8 +12,7 @@
 using namespace std;
 
 class Enemy : public Entity {
-
-public:
+ public:
   Enemy();
   Enemy(string, int, int);
   bool onAnimation(Timer);
@@ -22,7 +21,7 @@ public:
   void Load(ifstream &savefile);
   virtual ~Enemy();
 
-private:
+ private:
   bool isDead;
   int lastAnimTime;
   void setImg();

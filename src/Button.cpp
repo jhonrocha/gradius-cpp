@@ -49,7 +49,6 @@ void Button::setPosition(int x, int y) {
 bool Button::handle_events(Event event) {
   // If a mouse button was pressed
   if (event.EventType() == SDL_MOUSEBUTTONDOWN) {
-
     // If the left mouse button was pressed
     if (event.EventButton() == SDL_BUTTON_LEFT) {
       cout << "Event Type = SDL_MouseButtonDown!" << endl;

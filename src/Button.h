@@ -12,11 +12,11 @@
 #include "Sprite.h"
 
 class Button {
-private:
+ private:
   bool click;
   SDL_Rect buttonBox, mouseBox;
 
-public:
+ public:
   Sprite buttonImg;
   Button();
   Button(int, int, int, int);

@@ -11,10 +11,10 @@
 #include "SFX.h"
 
 class Music : public SFX {
-private:
+ private:
   Mix_Music *music;
 
-public:
+ public:
   Music();
   virtual ~Music();
   void loadFile(string);

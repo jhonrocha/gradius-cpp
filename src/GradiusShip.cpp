@@ -7,8 +7,9 @@
 
 #include "GradiusShip.h"
 
-template <class T> class FactoryShoot {
-public:
+template <class T>
+class FactoryShoot {
+ public:
   void gradius_shoot(list<Entity *> *gradiusList, int x, int y) {
     Bullet *tiro;
     tiro = new T(x, y, true);
@@ -113,20 +114,20 @@ void GradiusShip::addUpgrade() {
 
 void GradiusShip::activateUpgrade() {
   switch (upgrade) {
-  case POWERUP_SPEED: {
-    if (speedLevel < 5) {
-      upgradeSpeed();
+    case POWERUP_SPEED: {
+      if (speedLevel < 5) {
+        upgradeSpeed();
+      }
+      break;
     }
-    break;
-  }
-  case POWERUP_BULLET: {
-    upgradeBullet();
-    break;
-  }
-  case POWERUP_SHIELD: {
-    upgradeShield();
-    break;
-  }
+    case POWERUP_BULLET: {
+      upgradeBullet();
+      break;
+    }
+    case POWERUP_SHIELD: {
+      upgradeShield();
+      break;
+    }
   }
   upgrade = POWERUP_NONE;
 }
@@ -137,8 +138,7 @@ void GradiusShip::upgradeSpeed() {
 }
 
 void GradiusShip::upgradeBullet() {
-  if (bulletType != DOUBLE_BULLET)
-    bulletType = DOUBLE_BULLET;
+  if (bulletType != DOUBLE_BULLET) bulletType = DOUBLE_BULLET;
 }
 
 void GradiusShip::upgradeShield() {
@@ -157,14 +157,14 @@ void GradiusShip::shoot(Timer globalTime, list<Entity *> *gradiusList) {
     int x = (this->x + this->width + 2);
     int y = (this->y + this->height / 2);
     switch (bulletType) {
-    case SIMPLE_BULLET:
-      FactoryShoot<Simple> fire1;
-      fire1.gradius_shoot(gradiusList, x, y);
-      break;
-    case DOUBLE_BULLET:
-      FactoryShoot<Double> fire2;
-      fire2.gradius_shoot(gradiusList, x, y);
-      break;
+      case SIMPLE_BULLET:
+        FactoryShoot<Simple> fire1;
+        fire1.gradius_shoot(gradiusList, x, y);
+        break;
+      case DOUBLE_BULLET:
+        FactoryShoot<Double> fire2;
+        fire2.gradius_shoot(gradiusList, x, y);
+        break;
     }
   }
 }
@@ -197,6 +197,5 @@ void GradiusShip::Load(ifstream &savefile) {
   } else {
     bulletType = SIMPLE_BULLET;
   }
-  if (shieldIsOn)
-    upgradeShield();
+  if (shieldIsOn) upgradeShield();
 }

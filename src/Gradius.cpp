@@ -10,7 +10,7 @@
 int main() {
   Controler GameControl;
 
-  if(SDL_Init(SDL_INIT_EVERYTHING) == -1) {
+  if (SDL_Init(SDL_INIT_EVERYTHING) == -1) {
     cout << "Unknown Problem!" << endl;
   }
 

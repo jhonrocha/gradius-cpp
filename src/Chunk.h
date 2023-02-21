@@ -11,10 +11,10 @@
 #include "SFX.h"
 
 class Chunk : public SFX {
-private:
+ private:
   Mix_Chunk *chunk;
 
-public:
+ public:
   Chunk();
   virtual ~Chunk();
   void loadFile(string);

@@ -6,6 +6,7 @@
  */
 
 #include "Sprite.h"
+
 #include "SDL/SDL_image.h"
 
 Sprite::Sprite() {
@@ -67,7 +68,7 @@ void Sprite::show(SDL_Surface *screen, SDL_Rect *clip) {
 void Sprite::load(string path) {
   //	SDL_Surface* temp;
   //	temp = IMG_Load(path.c_str());
-  sprite = IMG_Load(path.c_str()); // SDL_DisplayFormat(temp);
+  sprite = IMG_Load(path.c_str());  // SDL_DisplayFormat(temp);
   animate.push_back(sprite);
   //	SDL_FreeSurface(temp);
   width = sprite->w;

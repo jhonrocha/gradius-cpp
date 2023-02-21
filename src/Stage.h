@@ -11,8 +11,7 @@
 #include "Screen.h"
 
 class Stage : public Screen {
-
-public:
+ public:
   Stage();
   void options();
   virtual ~Stage();

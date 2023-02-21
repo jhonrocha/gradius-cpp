@@ -54,14 +54,14 @@ Controler::~Controler() {
 void Controler::GameLoop() {
   Title TitleScreen;
   switch (TitleScreen.TitleLoop()) {
-  case 1:
-    Load();
-    break;
-  case 2:
-    quit = true;
-    break;
-  default:
-    break;
+    case 1:
+      Load();
+      break;
+    case 2:
+      quit = true;
+      break;
+    default:
+      break;
   }
   globalTime.start();
   startTime = globalTime.get_ticks();
@@ -330,56 +330,54 @@ void Controler::BossDeathAnimation(Entity *boss) {
 bool Controler::GameQuit() { return quit; }
 
 void Controler::HandleInput() {
-
   if (event.EventType() == SDL_KEYDOWN) {
     switch (event.EventKey()) {
-    case SDLK_UP:
-      yVel -= 5;
-      break;
-    case SDLK_DOWN:
-      yVel += 5;
-      break;
-    case SDLK_LEFT:
-      xVel -= 5;
-      break;
-    case SDLK_RIGHT:
-      xVel += 5;
-      break;
-    case SDLK_SPACE:
-      isShooting = true;
-      break;
-    default:
-      break;
+      case SDLK_UP:
+        yVel -= 5;
+        break;
+      case SDLK_DOWN:
+        yVel += 5;
+        break;
+      case SDLK_LEFT:
+        xVel -= 5;
+        break;
+      case SDLK_RIGHT:
+        xVel += 5;
+        break;
+      case SDLK_SPACE:
+        isShooting = true;
+        break;
+      default:
+        break;
     }
   } else if (event.EventType() == SDL_KEYUP) {
     switch (event.EventKey()) {
-    case SDLK_UP:
-      yVel += 5;
-      break;
-    case SDLK_DOWN:
-      yVel -= 5;
-      break;
-    case SDLK_LEFT:
-      xVel += 5;
-      break;
-    case SDLK_RIGHT:
-      xVel -= 5;
-      break;
-    case SDLK_SPACE:
-      isShooting = false;
-      break;
-    case SDLK_p:
-      isPaused = !isPaused;
-      break;
-    case SDLK_s:
-      if (isPaused)
-        Save();
-      break;
-    case SDLK_c:
-      gradius.activateUpgrade();
-      break;
-    default:
-      break;
+      case SDLK_UP:
+        yVel += 5;
+        break;
+      case SDLK_DOWN:
+        yVel -= 5;
+        break;
+      case SDLK_LEFT:
+        xVel += 5;
+        break;
+      case SDLK_RIGHT:
+        xVel -= 5;
+        break;
+      case SDLK_SPACE:
+        isShooting = false;
+        break;
+      case SDLK_p:
+        isPaused = !isPaused;
+        break;
+      case SDLK_s:
+        if (isPaused) Save();
+        break;
+      case SDLK_c:
+        gradius.activateUpgrade();
+        break;
+      default:
+        break;
     }
   }
 }
@@ -417,7 +415,6 @@ void Controler::GamePause() {
 }
 
 void Controler::ManageEntities() {
-
   list<Entity *>::iterator it1;
   list<Entity *>::iterator it2;
 
@@ -543,7 +540,6 @@ void Controler::ManageEntities() {
     it2 = gradiusList.begin();
     it2++;
     for (it1 = it2; it1 != gradiusList.end(); it1++) {
-
       if ((*it1)->EntityType() != ENTITY_SHIELD) {
         (*it1)->move(stage.screenWidth, stage.screenHeight);
         if ((*it1)->endScreen(stage.screenWidth, stage.screenHeight)) {

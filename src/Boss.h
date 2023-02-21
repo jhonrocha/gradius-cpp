@@ -14,14 +14,14 @@
 #include "Simple.h"
 
 class Boss : public Enemy, public Shoot {
-private:
+ private:
   int lastFireTime;
   int moveType;
   int moveDirection;
   void moveType1(int, int);
   bool moveType2(int, int);
 
-public:
+ public:
   Boss();
   Boss(int, int);
   virtual ~Boss();

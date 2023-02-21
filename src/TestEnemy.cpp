@@ -18,7 +18,6 @@ TestEnemy::~TestEnemy() {
 }
 
 void TestEnemy::move(int posX, int posY) {
-
   if (x < posX)
     x += xVel;
   else

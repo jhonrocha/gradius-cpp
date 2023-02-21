@@ -8,8 +8,10 @@
 #include "Title.h"
 
 Title::Title()
-    : Screen("assets/title_screen.png"), NewGame(560, 410, 170, 40),
-      Load(550, 465, 175, 40), Quit(600, 510, 90, 40) {
+    : Screen("assets/title_screen.png"),
+      NewGame(560, 410, 170, 40),
+      Load(550, 465, 175, 40),
+      Quit(600, 510, 90, 40) {
   // TODO Auto-generated constructor stub
   background.show(screen);
   SDL_WM_SetCaption("Title!", NULL);

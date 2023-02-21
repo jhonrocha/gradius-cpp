@@ -38,8 +38,7 @@ bool GradiusShield::onAnimation(Timer globalTime) {
   if (lastAnimTime + 90 < globalTime.get_ticks()) {
     lastAnimTime = globalTime.get_ticks();
     pos++;
-    if (pos == 12)
-      pos = 0;
+    if (pos == 12) pos = 0;
   }
   return true;
 }

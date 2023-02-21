@@ -11,10 +11,10 @@
 #include "SDL/SDL.h"
 
 class Event {
-private:
+ private:
   SDL_Event event;
 
-public:
+ public:
   Event();
   virtual ~Event();
   bool ThereIsEvent();

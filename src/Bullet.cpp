@@ -36,7 +36,6 @@ void Bullet::instanceCount() { amount += 1; }
 int Bullet::getAmount() { return amount; }
 
 void Bullet::move(int screenHeight, int screenWidth) {
-
   // Move the dot left or right
   if (ally) {
     x += xVel;

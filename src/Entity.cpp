@@ -111,7 +111,6 @@ bool Entity::checkCollision(Entity *other) {
 }
 
 bool Entity::endScreen(int screenWidth, int screenHeight) {
-
   if ((x + width < 0) || (x > screenWidth)) {
     return true;
   }
@@ -126,8 +125,7 @@ bool Entity::endScreen(int screenWidth, int screenHeight) {
 void Entity::beDamaged(int damage) { this->life -= damage; }
 
 bool Entity::isAlive() {
-  if (life > 0)
-    return true;
+  if (life > 0) return true;
   return false;
 }
 

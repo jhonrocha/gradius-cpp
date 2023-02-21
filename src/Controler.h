@@ -8,6 +8,10 @@
 #ifndef CONTROLER_H_
 #define CONTROLER_H_
 
+#include <list>
+#include <sstream>
+#include <vector>
+
 #include "Background.h"
 #include "Boss.h"
 #include "Bullet.h"
@@ -31,14 +35,11 @@
 #include "Title.h"
 #include "Upgrade.h"
 #include "WinScreen.h"
-#include <list>
-#include <sstream>
-#include <vector>
 
 using namespace std;
 
 class Controler {
-private:
+ private:
   bool quit;
   bool isShooting;
   bool isPaused;
@@ -93,7 +94,7 @@ private:
   bool Save();
   bool Load();
 
-public:
+ public:
   Controler();
   virtual ~Controler();
   void GameLoop();

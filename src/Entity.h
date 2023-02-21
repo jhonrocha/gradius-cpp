@@ -8,20 +8,21 @@
 #ifndef ENTITY_H_
 #define ENTITY_H_
 
+#include <fstream>
+#include <iostream>
+#include <list>
+
 #include "Chunk.h"
 #include "SDL/SDL.h"
 #include "Sprite.h"
 #include "Timer.h"
-#include <fstream>
-#include <iostream>
-#include <list>
 
 using namespace std;
 
 enum BulletType { SIMPLE_BULLET, DOUBLE_BULLET };
 
 class Entity : public Sprite {
-protected:
+ protected:
   int xVel, yVel;
   int life;
   SDL_Rect Box;
@@ -36,7 +37,7 @@ protected:
     ENTITY_BOSS,
   };
 
-public:
+ public:
   Entity();
   Entity(string, int, int);
   Entity(vector<string>, int, int);
