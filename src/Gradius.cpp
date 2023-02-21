@@ -7,19 +7,10 @@
 
 #include "Controler.h"
 
-bool init() {
-  // Initialize all SDL subsystems
-  if (SDL_Init(SDL_INIT_EVERYTHING) == -1) {
-    return false;
-  }
-
-  return true;
-}
-
 int main() {
   Controler GameControl;
 
-  if (!init()) {
+  if(SDL_Init(SDL_INIT_EVERYTHING) == -1) {
     cout << "Unknown Problem!" << endl;
   }
 

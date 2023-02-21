@@ -19,7 +19,7 @@ public:
   bool windowed;
   SDL_Surface *screen;
 
-  Screen(string backgorund_path);
+  Screen(string background_path);
   void setScreenWidth(int);
   void setScreenHeight(int);
   int getScreenWidth();
