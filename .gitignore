@@ -3,3 +3,5 @@ CMakeCache.txt
 Makefile
 gradius
 CMakeFiles
+.cache
+compile_commands.json

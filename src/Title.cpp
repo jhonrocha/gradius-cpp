@@ -37,6 +37,12 @@ int Title::TitleLoop() {
         cout << "Quit Game!" << endl;
         return 2;
       }
+      if (event.EventType() == SDL_KEYUP) {
+        if (event.EventKey() == SDLK_q) {
+          cout << "Quit Game!" << endl;
+          return 2;
+        }
+      }
     }
   }
   return 0;
